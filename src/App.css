@@ -1,8 +1,6 @@
 @import "tailwindcss";
 @import "tw-animate-css";
 
-@custom-variant dark (&:is(.dark *));
-
 @layer base {
   * {
     @apply border-border outline-ring/50 antialiased;
@@ -23,6 +21,10 @@
     @apply bg-background text-foreground;
   }
 }
+
+@import "tailwindcss";
+
+@custom-variant dark (&:is(.dark *));
 
 :root {
   --background: oklch(0.9940 0 0);
